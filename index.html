@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <title>Shopee_Fake</title>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <!--Header-navbar-->
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--separate">Kênh Người Bán</li>
+                        <li class="header__navbar-item header__navbar-item--separate">Trở Thành Người Bán ShopeeQuang20phan</li>
+                        <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
+                            Tải Ứng Dụng
+                            <div class="header__qr">
+                                <img src="./assets/img/qr_code.png" alt="QR code" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <img src="./assets/img/google_play.png" alt="GOOGLE PLAY" class="header__qr-download-img">
+                                    <img src="./assets/img/app_store.png" alt="APP STORE" class="header__qr-download-img">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item-no-hover">
+                            <span class="header__navbar-title--no-pointer" >Kết Nối</span>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="fab fa-facebook header__navbar-icon"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="fab fa-instagram header__navbar-icon"></i>
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item >
+                            <a href="" class="header__navbar-item-link">
+                                <i class="fas fa-bell"></i>
+                                Thông Báo
+                            </a>
+
+                            <div class="header__notification">
+                                    <img src="./assets/img/img_nofitication.png" alt="" class="header__notification-img">
+                                    <p class="header__notification-text">Đăng nhập để xem thông báo</p>
+
+                                <div class="header__notification-signin">
+                                    <a href="" class="header__notification-signin-s1">Đăng nhập</a>
+                                    <a href="" class="header__notification-signin-s1">Đăng ký</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="far fa-question-circle"></i>
+                                Hỗ Trợ
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng Ký</li>
+                        <li class="header__navbar-item header__navbar-item--strong">Đăng Nhập</li>
+                    </ul>
+                </nav>
+                <!--Header-width-search-->
+                <div class="header-width-search">
+                    <div class="header__logo">
+                        <img class="header__logo-img" src="http://storage.googleapis.com/ops-shopee-files-live/live/affiliate-blog/2019/05/logo-full-white.png" alt="">
+                    </div>
+
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm"></input>
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm......</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="" class="">Sách luật tâm thức</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="" class="">Sách nhà giả kim</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search-select">
+                            <span class="header__search-select-lable">Trong shop</span>      
+                            <i class="header__search-select-icon fas fa-angle-down"></i>
+
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item">
+                                    <span>Trong shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span>Ngoài shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <button class="header__search-btn">
+                            <i class="fas fa-search header__search-btn-icon"></i>
+                        </button>
+                    </div>
+
+                    <div class="header__cart">
+                        <i class="header__cart-icon fas fa-shopping-cart"></i>
+
+                        <div class="header__cart-list">
+                            <div class="header__cart-list header__cart-list--no-cart">
+                                <img src="/assets/img/no_cart.png" alt="" class="header__cart-no-cart-img">
+                                <p class="header__cart-list-text">Chưa có sản phẩm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="app__container">
+            <div class="grid">
+                <div class="grid__row app__content">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <i class="fas fa-list caterogy__heading-icon"></i>
+                                Danh mục
+                            </h3>
+            
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="" class="category-item__link">Sách kĩ năng sống</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">Sách khoa học vũ trụ</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">Sách Blockchain</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+    
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <span class="home-filter__label">Sắp xếp theo</span>
+                            <button class="home-filter__btn btn">Phổ biến</button>
+                            <button class="home-filter__btn btn btn--primary">Mới nhất</button>
+                            <button class="home-filter__btn btn">Bán chạy</button> 
+
+                            <div class="select-input">
+                                <span class="select-input__label">Giá</span>
+                                <i class="select-input__icon fas fa-angle-down"></i>
+
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: Thấp đến cao</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: Cao đến thấp</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>/14
+                                </span>
+
+                                <div class="home-filter__page-control">
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="home-filter__page-icon fas fa-angle-left home-filter__page-btn-disabled"></i>  
+                                    </a>
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="home-filter__page-icon fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style = "background-image: url(./assets/img/sach-luat-tam-thuc-giai-ma-ma-tran-vu-tru1.jpg);"></div>
+                                        <h5 class="home-product-item__name">Sách - Luật Tâm Thức – Giải Mã Ma Trận Vũ Trụ</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">499.000đ</span>
+                                            <span class="home-product-item__price-current">349.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="fas fa-heart home-product-item__like-icon-fill"></i>
+                                                <!-- <i class="far fa-heart "></i> -->
+                                            </span>
+
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item__favourit">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style = "background-image: url(./assets/img/sach-luat-tam-thuc-giai-ma-ma-tran-vu-tru1.jpg);"></div>
+                                        <h5 class="home-product-item__name">Sách - Luật Tâm Thức – Giải Mã Ma Trận Vũ Trụ</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">499.000đ</span>
+                                            <span class="home-product-item__price-current">349.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="fas fa-heart home-product-item__like-icon-fill"></i>
+                                                <!-- <i class="far fa-heart "></i> -->
+                                            </span>
+
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item__favourit">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style = "background-image: url(./assets/img/sach-luat-tam-thuc-giai-ma-ma-tran-vu-tru1.jpg);"></div>
+                                        <h5 class="home-product-item__name">Sách - Luật Tâm Thức – Giải Mã Ma Trận Vũ Trụ</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">499.000đ</span>
+                                            <span class="home-product-item__price-current">349.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="fas fa-heart home-product-item__like-icon-fill"></i>
+                                                <!-- <i class="far fa-heart "></i> -->
+                                            </span>
+
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item__favourit">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style = "background-image: url(./assets/img/sach-luat-tam-thuc-giai-ma-ma-tran-vu-tru1.jpg);"></div>
+                                        <h5 class="home-product-item__name">Sách - Luật Tâm Thức – Giải Mã Ma Trận Vũ Trụ</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">499.000đ</span>
+                                            <span class="home-product-item__price-current">349.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="fas fa-heart home-product-item__like-icon-fill"></i>
+                                                <!-- <i class="far fa-heart "></i> -->
+                                            </span>
+
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item__favourit">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style = "background-image: url(./assets/img/sach-luat-tam-thuc-giai-ma-ma-tran-vu-tru1.jpg);"></div>
+                                        <h5 class="home-product-item__name">Sách - Luật Tâm Thức – Giải Mã Ma Trận Vũ Trụ</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">499.000đ</span>
+                                            <span class="home-product-item__price-current">349.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="fas fa-heart home-product-item__like-icon-fill"></i>
+                                                <!-- <i class="far fa-heart "></i> -->
+                                            </span>
+
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item__favourit">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style = "background-image: url(./assets/img/sach-luat-tam-thuc-giai-ma-ma-tran-vu-tru1.jpg);"></div>
+                                        <h5 class="home-product-item__name">Sách - Luật Tâm Thức – Giải Mã Ma Trận Vũ Trụ</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">499.000đ</span>
+                                            <span class="home-product-item__price-current">349.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="fas fa-heart home-product-item__like-icon-fill"></i>
+                                                <!-- <i class="far fa-heart "></i> -->
+                                            </span>
+
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item__favourit">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style = "background-image: url(./assets/img/sach-luat-tam-thuc-giai-ma-ma-tran-vu-tru1.jpg);"></div>
+                                        <h5 class="home-product-item__name">Sách - Luật Tâm Thức – Giải Mã Ma Trận Vũ Trụ</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">499.000đ</span>
+                                            <span class="home-product-item__price-current">349.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="fas fa-heart home-product-item__like-icon-fill"></i>
+                                                <!-- <i class="far fa-heart "></i> -->
+                                            </span>
+
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item__favourit">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style = "background-image: url(./assets/img/sach-luat-tam-thuc-giai-ma-ma-tran-vu-tru1.jpg);"></div>
+                                        <h5 class="home-product-item__name">Sách - Luật Tâm Thức – Giải Mã Ma Trận Vũ Trụ</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">499.000đ</span>
+                                            <span class="home-product-item__price-current">349.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="fas fa-heart home-product-item__like-icon-fill"></i>
+                                                <!-- <i class="far fa-heart "></i> -->
+                                            </span>
+
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item__favourit">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style = "background-image: url(./assets/img/sach-luat-tam-thuc-giai-ma-ma-tran-vu-tru1.jpg);"></div>
+                                        <h5 class="home-product-item__name">Sách - Luật Tâm Thức – Giải Mã Ma Trận Vũ Trụ</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">499.000đ</span>
+                                            <span class="home-product-item__price-current">349.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="fas fa-heart home-product-item__like-icon-fill"></i>
+                                                <!-- <i class="far fa-heart "></i> -->
+                                            </span>
+
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item__favourit">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style = "background-image: url(./assets/img/sach-luat-tam-thuc-giai-ma-ma-tran-vu-tru1.jpg);"></div>
+                                        <h5 class="home-product-item__name">Sách - Luật Tâm Thức – Giải Mã Ma Trận Vũ Trụ</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">499.000đ</span>
+                                            <span class="home-product-item__price-current">349.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="fas fa-heart home-product-item__like-icon-fill"></i>
+                                                <!-- <i class="far fa-heart "></i> -->
+                                            </span>
+
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                                <i class="fas fa-star home-product-item__rating-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item__favourit">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <ul class="pagination">
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-left"></i>
+                                </a>
+                            </li>
+
+                            <li class="pagination-item pagination-item--active">
+                                <a href="" class="pagination-item__link">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">4</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">5</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">...</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">14</a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="gird">
+                <div class="grid__row">
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">ShopeeQuang20phan</a>
+                            </li>
+                            <li class="footer-item">    
+                                <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Giới thiệu</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Điều khoản</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Theo dõi</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="fab fa-facebook footer-item__icon"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="fab fa-instagram footer-item__icon"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="fab fa-linkedin footer-item__icon"></i>
+                                    linkedin
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Danh mục</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Sách bán chạy</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Sách mới nhất</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Sách phổ biến</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
+                        <div class="footer__dowload">
+                            <img src="/assets/img/qr_code.png" alt="Dowload QR" class="footer__dowload-qr">
+                            <div class="footer__dowload-apps">
+                                <a href="" class="footer__dowload-apps-link">
+                                    <img src="/assets/img/google_play.png" alt="Google Play" class="footer__dowload-img">
+                                </a>
+                                <a href="" class="footer__dowload-apps-link"></a>
+                                    <img src="/assets/img/app_store.png" alt="App Store" class="footer__dowload-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid__row">
+                    <p class="footer__text">© 2022 - Bản quyền thuộc về Công ty TNHH Quang Tiến Đồng</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+<!--Modal layout-->
+ 
+     <!-- <div class="modal">
+        <div class="modal__overlay">
+
+        </div>
+
+        <div class="modal__body"> -->
+
+                <!--Register form-->
+                <!-- <div class="auth-form">
+                    <div class="auth-form__container">
+
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng ký</h3>
+                            <a href="" class="auth-form__switch-btn">Đăng nhập</a>
+                        </div>
+    
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="email" class="auth-form__input" placeholder="Email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu của bạn">
+                            </div>
+                        </div>
+    
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                Bằng việc đăng ký bạn đã đồng ý với Shopee về,
+                                <a href="" class="auth-form__polycy-link">Điều khoản dịch vụ</a> & 
+                                <a href="" class="auth-form__polycy-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+        
+                        <div class="auth-form__controls">
+                            <button class="btn btn--normal auth-form__controls-back">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG KÝ</button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="auth-form__socials">
+                        <a href="" class="btn btn--size-s auth-form__socials--facebook btn--with-icon">
+                            <i class="fab fa-facebook-square"></i>
+                            <span class="auth-form__socials--title">Kết nối với Facebook</span>
+                        </a>
+                        <a href="" class="btn btn--size-s auth-form__socials--google btn--with-icon">
+                            <i class="fab fa-google"></i>
+                            <span class="auth-form__socials--title">Kết nối với Google</span>
+                        </a>
+                    </div>
+                </div> -->
+
+                <!--Login form-->
+                <!-- <div class="auth-form">
+                    <div class="auth-form__container">
+
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng nhập</h3>
+                            <a href="" class="auth-form__switch-btn">Đăng ký</a>
+                        </div>
+    
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="email" class="auth-form__input" placeholder="Email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            </div>
+                        </div>
+    
+                        <div class="auth-form__aside">
+                            <div class="auth-form__help">
+                                <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                                <span class="auth-form__help--separate"></span>
+                                <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                            </div>
+                        </div>
+        
+                        <div class="auth-form__controls">
+                            <button class="btn btn--normal auth-form__controls-back">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="auth-form__socials">
+                        <a href="" class="btn btn--size-s auth-form__socials--facebook btn--with-icon">
+                            <i class="fab fa-facebook-square"></i>
+                            <span class="auth-form__socials--title">Kết nối với Facebook</span>
+                        </a>
+                        <a href="" class="btn btn--size-s auth-form__socials--google btn--with-icon">
+                            <i class="fab fa-google"></i>
+                            <span class="auth-form__socials--title">Kết nối với Google</span>
+                        </a>
+                    </div>
+                </div>
+
+        </div>
+    </div> -->
+</body>
+</html>
